@@ -1,0 +1,220 @@
+
+
+main {
+    height: 4000%;
+}
+
+/** Navigation */
+.headerNav {
+    border: 1px solid #5a5a5a;
+    flex-direction: row;
+    justify-content:flex-end;
+    width: 100%;
+    background-color: #778899;
+
+}
+
+.headerNav a {
+    display: block;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.headerNav a.active {
+    color: white;
+    background-color: maroon;
+}
+
+.headerNav a:hover:not(.active) {
+    background-color: maroon;
+  }
+
+  .headerNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid maroon;
+    background-size: contain;
+
+  }
+  .headerNav li {
+    float: right;
+    background-color: #778899;
+    border-right: 2px solid whitesmoke;
+  }
+
+  .headerNav li:first-child {
+    float: right;
+    background-color: #778899;
+    border-right: 2px none;
+  }
+
+nav img {
+    height: 25px;
+    width: 25px;
+}
+
+  .logoText {
+    font-family: 'Brush Script MT', cursive;
+    -webkit-text-stroke: 1px #778899;
+    color:rgba(250,250,250,0.2);
+    background-image: url('assets\headerBG.png');
+    text-decoration: none;
+
+}
+
+a .logoText {
+  text-decoration: none;
+
+}
+
+  header {
+    background-color: whitesmoke;
+
+  }
+
+  header a{
+    text-decoration: none;
+  }
+
+  footer {
+    display:flex;
+    background-color: #778899;
+    bottom: 0;
+    width: 100%;
+    justify-content: right;
+  }
+
+  footer a{
+    text-decoration: none;
+    padding: 14px 16px;
+
+  }
+
+
+  #footerDiv p {
+    color: #F5F5F5;
+  }
+
+  /* The sticky class is added to the navbar with JS when scrolling */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+    .sticky + .content {
+    padding-top: 10px;
+  }
+
+  /** Home Page*/
+#quoteText {
+  text-align: center;
+
+}
+
+#quoteSubText {
+  text-align: center;
+
+}
+
+#homePic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+  /** Experience */
+#experienceMainBody {
+  margin: 30px;
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-items: space-evenly;
+
+}
+  #currentPosition {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  #previousPosition1 {
+    border: 2px dotted maroon;
+    padding-top: 10px;
+    text-align: left;
+
+  }
+  #previousPosition2 {
+    border: 2px dotted maroon;
+    padding-top: 10px;
+    text-align: right;
+
+  }
+  #previousPosition3 {
+    border: 2px dotted maroon;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+
+  }
+  #previousPosition4 {
+    border: 2px dotted maroon;
+    padding-top: 10px;
+    text-align: right;
+
+  }
+
+  /** Portfolio */
+.portfolioMain {
+  display:flex;
+  justify-content: center;
+
+}
+
+.portfolioRow {
+  margin: 15px 20px;
+}
+
+.portfolioRow,
+.portfolioRow > .portfolioColumn {
+  padding: 5px;
+}
+
+.portfolioColumn {
+  float: left;
+  width: 24%
+}
+
+.portfolioRow:after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+}
+
+.portfolioContent {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .portfolioColumn {
+    width: 40%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .portfolioColumn {
+    width: 100%;
+  }
+}
